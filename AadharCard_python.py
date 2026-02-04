@@ -16,7 +16,7 @@ import random
 # --------  CREATING DATABASE AND TABLE  --------
 db = pymysql.connect(host = 'localhost' , port = 3306,
                      user = 'root',
-                     password = 'Galaxy1234')
+                     password = '1234')
 
 cur = db.cursor()
 cur.execute("create database if not exists AadharCard;")
@@ -151,4 +151,5 @@ elif a ==2:
     elif(confirm in("no", "n", "2")):
         print("No")
     else:
+
         print("Invalid Input. ")
